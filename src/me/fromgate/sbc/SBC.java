@@ -2,7 +2,11 @@ package me.fromgate.sbc;
 
 import java.util.ArrayList;
 import java.util.Set;
+
+import net.minecraft.server.v1_7_R3.ChatComponentText;
+
 import org.bukkit.ChatColor;
+import org.bukkit.craftbukkit.v1_7_R3.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -30,10 +34,10 @@ public class SBC extends JavaPlugin implements Listener{
 	
 	@EventHandler(priority=EventPriority.LOWEST)
 	public void onPlayerJoin (PlayerJoinEvent event){
-		for (int i = 0; i<blockCodes.size(); i++) 
-			if (checkPermBC(event.getPlayer(), blockCodes.get(i))) 
-				event.getPlayer().sendMessage(ChatColor.translateAlternateColorCodes('&', blockCodes.get(i).code));
-	} 
+		for (int i = 0; i<blockCodes.size(); i++)
+			if (checkPermBC(event.getPlayer(), blockCodes.get(i)))
+			    ((CraftPlayer) event.getPlayer()).getHandle().sendMessage(new ChatComponentText(ChatColor.translateAlternateColorCodes('&', blockCodes.get(i).code)));
+	}
 
 	@Override
 	public void onEnable() {
