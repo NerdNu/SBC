@@ -1,4 +1,5 @@
 name: SBC
 main: me.fromgate.sbc.SBC
-version: 0.2.0
+version: 0.2.1
 author: fromgate
+contributors: Dumbo52, Jabelpeeps
