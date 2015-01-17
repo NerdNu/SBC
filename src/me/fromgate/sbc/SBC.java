@@ -77,6 +77,9 @@ public class SBC extends JavaPlugin implements Listener{
 		// Rei's Minimap
 		blockCodes.add(new BlockCode ("&0&0&1&e&f", "cheats","reicave", false));
 		blockCodes.add(new BlockCode ("&0&0&2&3&4&5&6&7&e&f","radar","reiradar", false));
+		// Zan's Minimap
+		blockCodes.add(new BlockCode ("&3 &6 &3 &6 &3 &6 &d", "cheats","zancave", true));
+		blockCodes.add(new BlockCode ("&3 &6 &3 &6 &3 &6 &e","radar","zanradar", true));
 		// Automap
 		blockCodes.add(new BlockCode ("&0&0&1&f&e","cheats","automap-ore", true));
 		blockCodes.add(new BlockCode ("&0&0&2&f&e","cheats","automap-cave", true));
