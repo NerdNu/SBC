@@ -3,10 +3,10 @@ package me.fromgate.sbc;
 import java.util.ArrayList;
 import java.util.Set;
 
-import net.minecraft.server.v1_9_R1.ChatComponentText;
+import net.minecraft.server.v1_10_R1.ChatComponentText;
 
 import org.bukkit.ChatColor;
-import org.bukkit.craftbukkit.v1_9_R1.entity.CraftPlayer;
+import org.bukkit.craftbukkit.v1_10_R1.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;

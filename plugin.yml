@@ -2,4 +2,5 @@ name: SBC
 main: me.fromgate.sbc.SBC
 version: ${project.version}
 author: fromgate
-contributors: Dumbo52, Jabelpeeps
+contributors: Dumbo52, Jabelpeeps, totemo, Challenger2
+
